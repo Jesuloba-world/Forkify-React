@@ -1,7 +1,9 @@
+import Background from "./layout/background/background";
+
 import "./App.css";
 
 function App() {
-	return <h1>Hello React</h1>;
+	return <Background>Hello React</Background>;
 }
 
 export default App;
