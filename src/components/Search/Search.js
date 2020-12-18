@@ -9,6 +9,8 @@ const search = (props) => {
 				type="text"
 				className={classes.Search__field}
 				placeholder="Search over 1,000,000 recipes..."
+				onChange={props.typed}
+				value={props.search}
 			></input>
 			<SearchButton />
 		</form>
