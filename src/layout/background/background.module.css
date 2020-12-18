@@ -3,6 +3,7 @@
 	background-image: linear-gradient(160deg, #f9cd76, #f48a7c);
 	padding: 10rem;
 	text-align: center;
+	position: relative;
 }
 
 @media only screen and (max-width: 1200px) {

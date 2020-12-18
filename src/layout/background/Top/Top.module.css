@@ -1,0 +1,42 @@
+.Top {
+	position: absolute;
+	top: 3rem;
+	right: 15rem;
+	display: flex;
+}
+
+.Top button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
+	transition: all 0.5s;
+}
+
+.Top button svg {
+	fill: black;
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.Top button span {
+	margin-left: 0.5rem;
+}
+
+.Top button:hover {
+	border-radius: 5px;
+	transform: translateY(-3px);
+	box-shadow: 0 2px 5px #000000a6;
+}
+
+.Top button:focus {
+	outline: none;
+}
+
+.Top button:active {
+	transform: translateY(-1px);
+	box-shadow: 0 1px 2px #0000009a;
+}
