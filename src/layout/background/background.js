@@ -1,5 +1,6 @@
 import classes from "./background.module.css";
 import Logo from "../../components/Logo/Logo";
+import Footer from "../Footer/Footer";
 
 const background = (props) => {
 	return (
@@ -8,6 +9,7 @@ const background = (props) => {
 				<Logo />
 			</div>
 			{props.children}
+			<Footer />
 		</div>
 	);
 };
