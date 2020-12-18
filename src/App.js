@@ -1,11 +1,12 @@
 import Background from "./layout/background/background";
+import Search from "./components/Search/Search";
 
 import "./App.css";
 
 function App() {
 	return (
 		<Background>
-			<h1>Search</h1>
+			<Search />
 		</Background>
 	);
 }
