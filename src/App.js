@@ -12,9 +12,17 @@ function App() {
 		setSearch(event.target.value);
 	};
 
+	const onSearchHandler = (event) => {
+		event.preventDefault();
+	};
+
 	return (
 		<Background>
-			<Search search={search} typed={onTypeSearchHandler} />
+			<Search
+				typed={search}
+				type={onTypeSearchHandler}
+				search={onSearchHandler}
+			/>
 		</Background>
 	);
 }
