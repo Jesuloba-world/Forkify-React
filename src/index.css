@@ -26,13 +26,16 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #655a56;
+	background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
-}
-
-a {
-	color: inherit;
 }

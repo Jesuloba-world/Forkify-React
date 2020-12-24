@@ -1,12 +1,15 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-import Home from "./containers/Home/Home";
-import Main from "./containers/Main/Main";
+import Background from "./layout/background/background";
 
 import "./App.css";
 
 function App() {
-	return <h1>This is my Forkify Project</h1>;
+	return (
+		<Background>
+			<h1>This is my forkify App</h1>
+		</Background>
+	);
 }
 
 export default App;

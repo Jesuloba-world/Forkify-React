@@ -1,55 +1,11 @@
 .Background {
-	height: 100vh;
-	background-image: linear-gradient(160deg, #f9cd76, #f48a7c);
-	padding: 10rem;
-	text-align: center;
-	position: relative;
+	width: 120rem;
+	margin: 0 auto;
 }
 
-@media only screen and (max-width: 1200px) {
-	.Background {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: center;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.Background {
-		padding: 5rem;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.Background {
-		padding: 2rem;
-	}
-}
-
-.Logo_holder {
-	width: 100%;
-	height: 18rem;
-	padding: 2.5rem;
-	margin-bottom: 2.5rem;
-}
-
-@media only screen and (width: 1024px) and (height: 1366px) {
-	.Logo_holder {
-		height: 25rem;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.Logo_holder {
-		height: 15rem;
-	}
-}
-
-@media only screen and (max-width: 300px) {
-	.Logo_holder {
-		height: 13.5rem;
-		width: 80%;
-		padding: 0;
+@media only screen and (max-width: 68.75em) {
+	.container {
+		width: 100%;
+		margin: 0;
 	}
 }
