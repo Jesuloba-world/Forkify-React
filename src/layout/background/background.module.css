@@ -1,6 +1,7 @@
 .Background {
 	width: 120rem;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 @media only screen and (max-width: 68.75em) {

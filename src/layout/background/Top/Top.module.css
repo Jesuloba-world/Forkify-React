@@ -1,7 +1,10 @@
 .Top {
-	position: absolute;
-	top: 3rem;
-	right: 15rem;
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 2.5rem 0;
+}
+
+.link__holder {
 	display: flex;
 }
 
