@@ -7,7 +7,8 @@ const background = (props) => {
 	return (
 		<div className={classes.Background}>
 			<Navigation />
-			{props.children}
+			<div className={classes.container}>{props.children}</div>
+			<Footer />
 		</div>
 	);
 };

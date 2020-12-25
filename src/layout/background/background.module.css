@@ -5,8 +5,12 @@
 }
 
 @media only screen and (max-width: 68.75em) {
-	.container {
+	.Background {
 		width: 100%;
 		margin: 0;
 	}
+}
+
+.container {
+	height: 70vh;
 }

@@ -1,7 +1,8 @@
 .Top {
 	display: flex;
 	flex-direction: row-reverse;
-	padding: 2.5rem 0;
+	height: 15vh;
+	align-items: center;
 }
 
 .link__holder {

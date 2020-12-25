@@ -1,4 +1,13 @@
 .Footer {
-	font-size: 1.5rem;
-	padding: 5rem 10rem;
+	height: 15vh;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #222;
+}
+
+.link:link,
+.link:visited {
+	color: inherit;
 }
