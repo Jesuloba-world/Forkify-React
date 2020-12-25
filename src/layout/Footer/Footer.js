@@ -5,7 +5,10 @@ const footer = (props) => {
 		<div className={classes.Footer}>
 			<p>
 				&copy; by Jesuloba John, Powered by{" "}
-				<a className={classes.link} href="forkify-api.herokuapp.com">
+				<a
+					className={classes.link}
+					href="https://forkify-api.herokuapp.com/"
+				>
 					Forkify-api.com
 				</a>
 			</p>

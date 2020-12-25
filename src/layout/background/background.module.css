@@ -13,4 +13,7 @@
 
 .container {
 	height: 70vh;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }

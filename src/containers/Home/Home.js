@@ -1,15 +1,20 @@
-import Background from "../../layout/background/background";
+import { Fragment } from "react";
+
+import Logo from "../../components/Logo/Logo";
 import Search from "../../components/Search/Search";
 
 const home = (props) => {
 	return (
-		<Background>
-			<Search
-				typed={props.search}
-				type={props.type}
-				search={props.clicked}
-			/>
-		</Background>
+		<Fragment>
+			<div
+				style={{
+					height: "15rem",
+				}}
+			>
+				<Logo />
+			</div>
+			<Search />
+		</Fragment>
 	);
 };
 
