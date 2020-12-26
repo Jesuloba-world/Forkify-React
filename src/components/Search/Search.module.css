@@ -10,33 +10,6 @@
 	transition: all 0.3s;
 }
 
-@media only screen and (width: 1024px) and (height: 1366px) {
-	.Search {
-		height: 10rem;
-		padding-left: 4rem;
-		align-items: stretch;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.Search {
-		height: 8rem;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.Search {
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.Search {
-		height: 6rem;
-		padding: 2rem;
-	}
-}
-
 .Search:focus-within {
 	transform: translateY(-2px);
 	box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
@@ -49,24 +22,6 @@
 	color: inherit;
 	font-size: 1.7rem;
 	width: 100%;
-}
-
-@media only screen and (width: 1024px) and (height: 1366px) {
-	.Search__field {
-		font-size: 3rem;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.Search__field {
-		font-size: 2.5rem;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.Search__field {
-		font-size: 2rem;
-	}
 }
 
 .Search__field:focus {

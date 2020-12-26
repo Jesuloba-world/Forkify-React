@@ -1,9 +1,21 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 import Logo from "../../components/Logo/Logo";
 import Search from "../../components/Search/Search";
 
-const home = (props) => {
+const Home = (props) => {
+	const [search, setSearch] = useState("");
+
+	const onTypeHandler = (event) => {
+		setSearch(event.target.value);
+	};
+
+	const onSearchHandler = (event) => {
+		event.preventDefault();
+		console.log(search);
+		setSearch("");
+	};
+
 	return (
 		<Fragment>
 			<div
@@ -13,9 +25,13 @@ const home = (props) => {
 			>
 				<Logo />
 			</div>
-			<Search />
+			<Search
+				typed={search}
+				search={onSearchHandler}
+				type={onTypeHandler}
+			/>
 		</Fragment>
 	);
 };
 
-export default home;
+export default Home;
