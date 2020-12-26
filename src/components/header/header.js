@@ -1,5 +1,5 @@
-import Logo from "../../components/Logo/Logo";
-import Search from "../../components/Search/Search";
+import Logo from "../Logo/Logo";
+import Search from "../Search/Search";
 import classes from "./header.module.css";
 
 const Header = () => {

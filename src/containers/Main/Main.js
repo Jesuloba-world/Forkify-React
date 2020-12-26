@@ -1,11 +1,12 @@
-import Background from "../../layout/background/background";
-import Header from "../../layout/header/header";
+import { Fragment } from "react";
+import Header from "../../components/header/header";
 
 const Main = (props) => {
 	return (
-		<Background main>
+		<Fragment>
 			<Header />
-		</Background>
+			<div></div>
+		</Fragment>
 	);
 };
 
