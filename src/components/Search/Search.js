@@ -4,7 +4,11 @@ import classes from "./Search.module.css";
 
 const search = (props) => {
 	return (
-		<form className={classes.Search} onSubmit={props.search}>
+		<form
+			className={classes.Search}
+			onSubmit={props.search}
+			style={props.style}
+		>
 			<input
 				type="text"
 				className={classes.Search__field}
