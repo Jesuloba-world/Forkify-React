@@ -1,14 +1,12 @@
 .Header {
 	padding: 1rem 2rem;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
 .LogoHolder {
-	height: 8rem;
-	margin-right: 2rem;
-}
-
-.Search_Bar {
+	height: 6rem;
+	margin-right: 3rem;
 }

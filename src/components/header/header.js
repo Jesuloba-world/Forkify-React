@@ -13,7 +13,6 @@ const Header = () => {
 				<Search
 					style={{
 						margin: "0",
-						transform: "scaleX(1)",
 					}}
 				/>
 			</div>
