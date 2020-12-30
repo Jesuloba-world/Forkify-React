@@ -3,12 +3,14 @@ import SearchButton from "../UI/SearchButton/SearchButton";
 import classes from "./Search.module.css";
 
 const search = (props) => {
+	const searchClass = [classes.Search];
+
+	if (props.header) {
+		searchClass.push(classes.Header_Search);
+	}
+
 	return (
-		<form
-			className={classes.Search}
-			onSubmit={props.search}
-			style={props.style}
-		>
+		<form className={searchClass.join(" ")} onSubmit={props.search}>
 			<input
 				type="text"
 				className={classes.Search__field}

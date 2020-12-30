@@ -1,12 +1,15 @@
-import { Fragment } from "react";
 import Header from "../../components/header/header";
 import classes from "./Main.module.css";
+import Glass from "../../components/UI/Glass/Glass";
 
 const Main = (props) => {
 	return (
 		<div className={classes.Main}>
 			<Header />
-			<div>This is the search Result and Recipe</div>
+			<div className={classes.SubMain}>
+				<Glass>This is the Search Result section</Glass>
+				<Glass>This is the recipe section</Glass>
+			</div>
 		</div>
 	);
 };

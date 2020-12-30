@@ -10,11 +10,7 @@ const Header = () => {
 				<div className={classes.LogoHolder}>
 					<Logo />
 				</div>
-				<Search
-					style={{
-						margin: "0",
-					}}
-				/>
+				<Search header />
 			</div>
 		</Glass>
 	);

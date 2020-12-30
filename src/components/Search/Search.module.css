@@ -15,6 +15,16 @@
 	box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
 }
 
+.Header_Search {
+	margin: 0;
+	transform: scaleY(0.9) scaleX(0.95);
+	transform-origin: right;
+}
+
+.Header_Search:focus-within {
+	transform: scale(1);
+}
+
 .Search__field {
 	border: none;
 	background: none;
