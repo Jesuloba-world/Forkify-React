@@ -8,6 +8,6 @@
 
 .SubMain {
 	display: grid;
-	grid-template-columns: 2fr 5fr;
+	grid-template-columns: 2fr 6fr;
 	gap: 1rem;
 }
