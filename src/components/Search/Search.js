@@ -1,6 +1,7 @@
 import SearchButton from "../UI/SearchButton/SearchButton";
-
 import classes from "./Search.module.css";
+
+import {} from "react-redux";
 
 const search = (props) => {
 	const searchClass = [classes.Search];

@@ -4,12 +4,29 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// redux
+import { Provider } from "react-redux";
+import { createStore, combineReducers, compose } from "redux";
+import searchReducer from "./store/reducers/Search";
+
+const composeEnhancers =
+	(process.env.NODE_ENV !== "production"
+		? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+		: null) || compose;
+
+const rootReducer = combineReducers({
+	search: searchReducer,
+});
+
+const store = createStore(rootReducer, composeEnhancers());
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
+		<Provider store={store}>
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
+		</Provider>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
