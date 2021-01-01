@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import SearchButton from "../UI/SearchButton/SearchButton";
 import classes from "./Search.module.css";
-import { searchSubmit } from "../../store/actions/index";
+import * as actions from "../../store/actions/index";
 
 const Search = (props) => {
 	const [search, setSearch] = useState("");
@@ -11,8 +11,9 @@ const Search = (props) => {
 	const dispatch = useDispatch();
 
 	const onSearchHandler = (event) => {
+		event.preventDefault();
 		setSearch("");
-		return dispatch(searchSubmit(event, search));
+		return dispatch(actions.search(search));
 	};
 
 	const onChangeHandler = (event) => {

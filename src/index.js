@@ -6,19 +6,29 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // redux
 import { Provider } from "react-redux";
-import { createStore, combineReducers, compose } from "redux";
+import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import searchReducer from "./store/reducers/Search";
+// saga
+import createSagaMiddleware from "redux-saga";
+import { watchSearch } from "./store/sagas/index";
 
 const composeEnhancers =
 	(process.env.NODE_ENV !== "production"
 		? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
 		: null) || compose;
 
+const sagaMiddleware = createSagaMiddleware();
+
 const rootReducer = combineReducers({
 	search: searchReducer,
 });
 
-const store = createStore(rootReducer, composeEnhancers());
+const store = createStore(
+	rootReducer,
+	composeEnhancers(applyMiddleware(sagaMiddleware))
+);
+
+sagaMiddleware.run(watchSearch);
 
 ReactDOM.render(
 	<React.StrictMode>

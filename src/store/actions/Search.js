@@ -1,9 +1,15 @@
 import * as actionTypes from "./actionTypes";
 
-export const searchSubmit = (event, value) => {
-	event.preventDefault();
+export const search = (value) => {
 	return {
-		type: actionTypes.SEARCH_SUBMIT,
+		type: actionTypes.SEARCH,
+		search: value,
+	};
+};
+
+export const searchStart = (value) => {
+	return {
+		type: actionTypes.SEARCH_START,
 		search: value,
 	};
 };

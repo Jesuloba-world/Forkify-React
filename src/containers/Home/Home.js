@@ -1,24 +1,9 @@
-import { Fragment, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { Fragment } from "react";
 
 import Logo from "../../components/Logo/Logo";
 import Search from "../../components/Search/Search";
-import * as actions from "../../store/actions";
 
 const Home = (props) => {
-	// const [search, setSearch] = useState("");
-
-	// const dispatch = useDispatch();
-
-	// const onTypeHandler = (event) => {
-	// 	setSearch(event.target.value);
-	// };
-
-	// const onSearchHandler = (event) => {
-	// 	setSearch("");
-	// 	return dispatch(actions.searchSubmit(event, search));
-	// };
-
 	return (
 		<Fragment>
 			<div
@@ -28,11 +13,7 @@ const Home = (props) => {
 			>
 				<Logo />
 			</div>
-			<Search
-			// typed={search}
-			// search={onSearchHandler}
-			// type={onTypeHandler}
-			/>
+			<Search />
 		</Fragment>
 	);
 };

@@ -5,24 +5,22 @@ const initial_state = {
 	searching: false,
 	searched: false,
 	error: null,
+	result: null,
 };
 
 const reducer = (state = initial_state, action) => {
 	switch (action.type) {
-		case actionTypes.SEARCH_SUBMIT:
-			return {
-				...state,
-				input: action.search,
-			};
 		case actionTypes.SEARCH_START:
 			return {
 				...state,
 				searching: true,
+				input: action.search,
 			};
 		case actionTypes.SEARCH_SUCCESS:
 			return {
 				...state,
 				searching: false,
+				result: action.result,
 			};
 		case actionTypes.SEARCH_FAIL:
 			return {
