@@ -7,9 +7,22 @@ export const search = (value) => {
 	};
 };
 
-export const searchStart = (value) => {
+export const searchStart = () => {
 	return {
 		type: actionTypes.SEARCH_START,
-		search: value,
+	};
+};
+
+export const searchSuccess = (searchResult) => {
+	return {
+		type: actionTypes.SEARCH_SUCCESS,
+		result: searchResult,
+	};
+};
+
+export const searchFail = (error) => {
+	return {
+		type: actionTypes.SEARCH_FAIL,
+		error: error,
 	};
 };

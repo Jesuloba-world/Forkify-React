@@ -1,1 +1,1 @@
-export { search, searchStart } from "./Search";
+export { search, searchStart, searchSuccess, searchFail } from "./Search";
