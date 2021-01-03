@@ -3,11 +3,9 @@ import { useSelector } from "react-redux";
 
 import Logo from "../../components/Logo/Logo";
 import Search from "../../components/Search/Search";
-import { dotSpinner as Dot } from "../../components/UI/Spinner/Spinner";
 
 const Home = (props) => {
 	const searched = useSelector((state) => state.search.searched);
-	const searching = useSelector((state) => state.search.searching);
 
 	if (searched) {
 		props.history.push("/search");
@@ -17,13 +15,12 @@ const Home = (props) => {
 		<Fragment>
 			<div
 				style={{
-					height: "15rem",
+					height: "12vw",
 				}}
 			>
 				<Logo />
 			</div>
 			<Search />
-			{searching ? <Dot /> : null}
 		</Fragment>
 	);
 };

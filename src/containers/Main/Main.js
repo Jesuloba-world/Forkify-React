@@ -5,7 +5,7 @@ import Glass from "../../components/UI/Glass/Glass";
 
 const Main = (props) => {
 	const searchResult = useSelector((state) => state.search.result);
-	// console.log(searchResult);
+	console.log(searchResult);
 
 	return (
 		<div className={classes.Main}>

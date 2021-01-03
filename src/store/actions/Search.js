@@ -26,3 +26,9 @@ export const searchFail = (error) => {
 		error: error,
 	};
 };
+
+export const searchReset = () => {
+	return {
+		type: actionTypes.SEARCH_RESET,
+	};
+};

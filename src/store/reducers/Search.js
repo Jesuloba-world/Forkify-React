@@ -13,13 +13,12 @@ const reducer = (state = initial_state, action) => {
 			return {
 				...state,
 				searching: true,
-				searched: false,
+				searched: true,
 			};
 		case actionTypes.SEARCH_SUCCESS:
 			return {
 				...state,
 				searching: false,
-				searched: true,
 				error: null,
 				result: action.result,
 			};
@@ -27,8 +26,15 @@ const reducer = (state = initial_state, action) => {
 			return {
 				...state,
 				searching: false,
-				searched: true,
 				error: action.error,
+				result: null,
+			};
+		case actionTypes.SEARCH_RESET:
+			return {
+				...state,
+				searching: false,
+				searched: false,
+				error: null,
 				result: null,
 			};
 		default:

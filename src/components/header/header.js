@@ -3,7 +3,7 @@ import Search from "../Search/Search";
 import Glass from "../UI/Glass/Glass";
 import classes from "./header.module.css";
 
-const Header = () => {
+const Header = (props) => {
 	return (
 		<Glass>
 			<div className={classes.Header}>
