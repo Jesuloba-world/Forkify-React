@@ -1,6 +1,7 @@
 import * as actionTypes from "../actions/actionTypes";
 
 const initial_state = {
+	query: "",
 	searching: false,
 	searched: false,
 	error: null,
@@ -12,6 +13,7 @@ const reducer = (state = initial_state, action) => {
 		case actionTypes.SEARCH_START:
 			return {
 				...state,
+				query: action.search,
 				searching: true,
 				searched: true,
 			};
@@ -32,6 +34,7 @@ const reducer = (state = initial_state, action) => {
 		case actionTypes.SEARCH_RESET:
 			return {
 				...state,
+				query: "",
 				searching: false,
 				searched: false,
 				error: null,

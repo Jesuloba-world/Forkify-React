@@ -7,9 +7,10 @@ export const search = (value) => {
 	};
 };
 
-export const searchStart = () => {
+export const searchStart = (value) => {
 	return {
 		type: actionTypes.SEARCH_START,
+		search: value,
 	};
 };
 
