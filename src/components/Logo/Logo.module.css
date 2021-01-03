@@ -2,9 +2,9 @@
 	height: 100%;
 }
 
-.headerLogo {
+/* .headerLogo {
 	cursor: pointer;
-}
+} */
 
 @media only screen and (max-width: 300px) {
 	.Logo {

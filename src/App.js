@@ -1,17 +1,22 @@
 import { Switch, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import Spinner from "./components/UI/Spinner/Spinner";
 
 import Background from "./layout/background/background";
-import Home from "./containers/Home/Home";
-import Main from "./containers/Main/Main";
 
 import "./App.css";
+
+const Home = lazy(() => import("./containers/Home/Home"));
+const Main = lazy(() => import("./containers/Main/Main"));
 
 function App() {
 	return (
 		<Background>
 			<Switch>
-				<Route path="/search" component={Main} />
-				<Route path="/" component={Home} />
+				<Suspense fallback={Spinner}>
+					<Route path="/search" component={Main} />
+					<Route path="/" exact component={Home} />
+				</Suspense>
 			</Switch>
 		</Background>
 	);
