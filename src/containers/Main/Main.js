@@ -1,17 +1,14 @@
-import { useSelector } from "react-redux";
 import Header from "../../components/header/header";
 import classes from "./Main.module.css";
 import Glass from "../../components/UI/Glass/Glass";
+import SearchResult from "../../components/SearchResults/SearchResults";
 
 const Main = (props) => {
-	const searchResult = useSelector((state) => state.search.result);
-	console.log(searchResult);
-
 	return (
 		<div className={classes.Main}>
 			<Header />
 			<div className={classes.SubMain}>
-				<Glass>This is the Search Result section</Glass>
+				<SearchResult />
 				<Glass>This is the recipe section</Glass>
 			</div>
 		</div>
