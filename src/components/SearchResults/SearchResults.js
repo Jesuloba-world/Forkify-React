@@ -5,12 +5,6 @@ import Spinner from "../UI/Spinner/Spinner";
 import classes from "./SearchResults.module.css";
 
 const SearchResults = (props) => {
-	// const transformedResult = props.result.map((el) => (
-	// 	<SearchResult result={el} />
-	// ));
-
-	// console.log(transformedResult);
-
 	const searchResult = useSelector((state) => state.search.result);
 	const searching = useSelector((state) => state.search.searching);
 
