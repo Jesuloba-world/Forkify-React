@@ -26,7 +26,7 @@ const SearchResults = (props) => {
 		}
 	} else {
 		transformedResult = (
-			<div className={classes.SearchResult}>
+			<div className={classes.SearchResults}>
 				<ul>
 					{searchResult.map((el) => (
 						<SearchResult result={el} />

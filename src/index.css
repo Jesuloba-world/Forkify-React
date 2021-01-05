@@ -12,6 +12,9 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+
+	--scrollbarBG: #cfd8dc;
+	--thumbBG: #90a4ae;
 }
 @media only screen and (max-width: 68.75em) {
 	html {
