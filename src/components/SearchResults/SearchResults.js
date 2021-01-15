@@ -23,7 +23,7 @@ const SearchResults = (props) => {
 			<div className={classes.SearchResults}>
 				<ul>
 					{searchResult.map((el) => (
-						<SearchResult result={el} />
+						<SearchResult key={el.id} result={el} />
 					))}
 				</ul>
 			</div>
