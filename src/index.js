@@ -8,9 +8,10 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import searchReducer from "./store/reducers/Search";
+import recipeReducer from "./store/reducers/Recipe";
 // saga
 import createSagaMiddleware from "redux-saga";
-import { watchSearch } from "./store/sagas/index";
+import { watchSearch, watchRecipe } from "./store/sagas/index";
 
 const composeEnhancers =
 	(process.env.NODE_ENV !== "production"
@@ -21,6 +22,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 const rootReducer = combineReducers({
 	search: searchReducer,
+	recipe: recipeReducer,
 });
 
 const store = createStore(
@@ -29,6 +31,7 @@ const store = createStore(
 );
 
 sagaMiddleware.run(watchSearch);
+sagaMiddleware.run(watchRecipe);
 
 ReactDOM.render(
 	<React.StrictMode>

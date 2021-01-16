@@ -21,6 +21,18 @@
 	transform: scale(1.1);
 }
 
+.results__link--active {
+	background-color: #f9f5f3;
+}
+
+.results__link--active .results__fig::before {
+	opacity: 0;
+}
+
+.results__link--active .results__fig img {
+	transform: scale(1.1);
+}
+
 .results__fig {
 	flex: 0 0 5.5rem;
 	border-radius: 50%;

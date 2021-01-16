@@ -17,6 +17,7 @@ const reducer = (state = initial_state, action) => {
 				searching: true,
 				searched: true,
 				result: null,
+				error: null,
 			};
 		case actionTypes.SEARCH_SUCCESS:
 			return {
