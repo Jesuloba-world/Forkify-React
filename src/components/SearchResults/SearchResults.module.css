@@ -8,6 +8,13 @@
 	overflow-x: hidden;
 }
 
+.error {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* 
 SearchResults::-webkit-scrollbar {
 	width: 11px;
