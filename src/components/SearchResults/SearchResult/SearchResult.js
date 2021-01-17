@@ -1,4 +1,7 @@
+import { useSelector, useDispatch } from "react-redux";
+
 import classes from "./SearchResult.module.css";
+import { recipe } from "../../../store/actions/index";
 
 const SearchResult = (props) => {
 	const limitRecipeTitle = (title, limit = 17) => {
@@ -17,11 +20,24 @@ const SearchResult = (props) => {
 		return title;
 	};
 
+	const dispatch = useDispatch();
+	const getRecipe = () => dispatch(recipe(props.result.recipe_id));
+
+	const activeId = useSelector((state) => state.recipe.id);
+	const currentId = props.result.recipe_id;
+
+	let linkClasses = [classes.results__link];
+
+	if (activeId === currentId) {
+		linkClasses.push(classes.results__link__active);
+	}
+
 	return (
 		<li>
 			<a
-				className={classes.results__link}
+				className={linkClasses.join(" ")}
 				href={`#${props.result.recipe_id}`}
+				onClick={getRecipe}
 			>
 				<figure className={classes.results__fig}>
 					<img

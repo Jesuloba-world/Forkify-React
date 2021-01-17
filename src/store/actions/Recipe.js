@@ -1,6 +1,6 @@
 import * as actionTypes from "./actionTypes";
 
-export const getRecipe = (id) => {
+export const recipe = (id) => {
 	return {
 		type: actionTypes.RECIPE,
 		id: id,

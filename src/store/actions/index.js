@@ -6,4 +6,4 @@ export {
 	searchReset,
 } from "./Search";
 
-export { getRecipe, recipeStart, recipeSuccess, recipeFail } from "./Recipe";
+export { recipe, recipeStart, recipeSuccess, recipeFail } from "./Recipe";
