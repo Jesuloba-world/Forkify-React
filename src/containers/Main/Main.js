@@ -1,7 +1,7 @@
 import Header from "../../components/header/header";
 import classes from "./Main.module.css";
-import Glass from "../../components/UI/Glass/Glass";
 import SearchResult from "../../components/SearchResults/SearchResults";
+import Recipe from "../../components/Recipe/Recipe";
 
 const Main = (props) => {
 	return (
@@ -9,7 +9,7 @@ const Main = (props) => {
 			<Header />
 			<div className={classes.SubMain}>
 				<SearchResult />
-				<Glass>This is the recipe section</Glass>
+				<Recipe />
 			</div>
 		</div>
 	);

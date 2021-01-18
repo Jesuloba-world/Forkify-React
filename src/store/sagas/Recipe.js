@@ -9,7 +9,7 @@ export function* recipeSaga(action) {
 		const response = yield axios.get(
 			`https://forkify-api.herokuapp.com/api/get?rId=${action.id}`
 		);
-		yield put(actions.recipeSuccess(response.data));
+		yield put(actions.recipeSuccess(response.data.recipe));
 	} catch (error) {
 		yield put(actions.recipeFail(error.message));
 	}
