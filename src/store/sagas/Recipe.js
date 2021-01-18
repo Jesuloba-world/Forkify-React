@@ -5,7 +5,6 @@ import * as actions from "../actions/index";
 
 export function* recipeSaga(action) {
 	yield put(actions.recipeStart(action.id));
-	console.log(action.id);
 	try {
 		const response = yield axios.get(
 			`https://forkify-api.herokuapp.com/api/get?rId=${action.id}`
