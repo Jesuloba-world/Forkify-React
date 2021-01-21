@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux";
+import { Scrollbars } from "react-custom-scrollbars";
+
 import Glass from "../UI/Glass/Glass";
 import SearchResult from "./SearchResult/SearchResult";
 import Spinner from "../UI/Spinner/Spinner";
@@ -30,13 +32,13 @@ const SearchResults = (props) => {
 		}
 	} else {
 		transformedResult = (
-			<div className={classes.SearchResults}>
+			<Scrollbars className={classes.SearchResults}>
 				<ul>
 					{searchResult.map((el) => (
 						<SearchResult key={el.recipe_id} result={el} />
 					))}
 				</ul>
-			</div>
+			</Scrollbars>
 		);
 	}
 
